@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   
 
   # Defines the root path route ("/")
-  root "application#index"
+  root "pagina#Home"
+  get "/About",to: "pagina#About"
+  get "/Contact",to: "pagina#Contact"
+  
 end
